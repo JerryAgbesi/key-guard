@@ -1,4 +1,7 @@
 autopep8==1.7.0
 click==8.1.3
+high-entropy-string==0.2.1
+-e git+ssh://git@github.com/JerryAgbesi/key-guard.git@4721f23ffe67b38a749cf3e63ad5316a31d674e6#egg=key_guard
 pycodestyle==2.9.1
 toml==0.10.2
+zxcvbn==1.0

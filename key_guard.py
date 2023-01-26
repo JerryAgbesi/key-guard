@@ -1,5 +1,6 @@
 import os
 import click
+from high_entropy_string import PythonStringData
 
 
 cwd = os.getcwd()
@@ -13,7 +14,7 @@ def load_from_files(fileignore_path,keyignore_path):
     '''
     try:
         guarded_words = [str(word.strip())
-                            for word in open(keyignore_path).readlines()]
+                            for word in open(keyignore_path).readlines()]  #picking the guarded words
         exempted_files = [str(file.strip())
                         for file in open(fileignore_path).readlines()]
         return {"guarded_words":guarded_words, "exempted_files":exempted_files}
